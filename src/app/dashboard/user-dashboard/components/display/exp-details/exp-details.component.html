@@ -1,0 +1,23 @@
+<div>
+  <h4 class="mb-2">Experience Credentials</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Title</th>
+        <th>Years</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of exp">
+        <td>{{ e.company }}</td>
+        <td>{{ e.title }}</td>
+        <td>{{ e.from | date }} - {{ e.to | date }}</td>
+        <td>
+          <button class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
